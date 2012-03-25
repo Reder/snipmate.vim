@@ -75,9 +75,9 @@ snippet m
 snippet v
 	${1:String} ${2:var}${3: = null}${4};${5}
 snippet co
-	static public final ${1:String} ${2:var} = ${3};${4}
+	public static final ${1:String} ${2:var} = ${3};${4}
 snippet cos
-	static public final String ${1:var} = "${2}";${3}
+	public static final String ${1:var} = "${2}";${3}
 snippet as
 	assert ${1:test} : "${2:Failure message}";${3}
 snippet try
@@ -93,3 +93,7 @@ snippet tryf
 	}
 snippet rst
 	ResultSet ${1:rst}${2: = null}${3};${4}
+snippet sysout
+	System.out.println(${1});
+snippet syserr
+	System.err.println(${1});
